@@ -23,6 +23,9 @@ st.dataframe(df)
 # ================================
 # Step 2: Adding User Interaction with Widgets
 # ================================
+city = st.selectbox("Select a city", df["City"].unique())
+
+st.dataframe(df[df["City"] == city])
 
 # Using a selectbox to allow users to filter data by city
 # Students learn how to use widgets in Streamlit for interactivity
@@ -41,10 +44,15 @@ st.dataframe(df)
 # # Ensure the "data" folder exists with the CSV file
 # Display the imported dataset
 
+df2 = pd.read_csv("Data/sample_data.csv")
+st.dataframe(df2)
 
 # Using a selectbox to allow users to filter data by city
 # Students learn how to use widgets in Streamlit for interactivity
 
+salary = st.slider("Choose a maximum salary", min_value = df2["Salary"].min(), max_value = df2["Salary"].max())
+
+st.dataframe(df2[df2["Salary"] <= salary])
 
 # Filtering the DataFrame based on user selection
 
