@@ -4,7 +4,7 @@
 💻 **Goal of these projects is to showcase proficiency with Python**  
 
 ### 👨‍💻 Projects
-- 🐧 Penguin Classification Model – A machine learning project focused on classifying penguin species based on key features.
+- 🐧 Basic Streamlit App – An introductory project that classifies penguin species based on key features.
 
 
 ### 🚀 What's Next?  
