@@ -1,7 +1,7 @@
 # 🏅 Olympic Medalists Dashboard
 
 Welcome to the **Olympic Medalists Data Dashboard**! 🎉  
-This interactive Streamlit app allows users to explore and filter Olympic medalist data from the 2008 games. 🏆
+This interactive Streamlit app allows users to explore and filter Olympic medalist data from the 2008 games. 
 
 ## 📌 Features 
 - 🎯 **Filter** by name, event,and medal type
@@ -25,13 +25,13 @@ This project follows Tidy Data principles as outlined by Hadley Wickham:
 - Each observation forms a row (each row contains one medalist's achievement).
 - Each value is in a single cell (no merged or nested data structures).
 
-This structure allows for efficient filtering, aggregation, and visualization, making it easier to analyze Olympic medalist data. 🏆
+This structure allows for efficient filtering, aggregation, and visualization, making it easier to analyze Olympic medalist data. 
 
 
 ## 🚀 Installation
-1. Clone this repository:
-2. Install dependencies:
-3. Run the Streamlit app:
+1. Clone this repository
+2. Install dependencies
+3. Run the Streamlit app
 
 
 ## 📦 Dependencies
