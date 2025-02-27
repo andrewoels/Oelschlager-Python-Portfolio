@@ -5,6 +5,7 @@
 
 ### 👨‍💻 Projects
 - 🐧 Basic Streamlit App – An introductory project that classifies penguin species based on key features.
+- 🏅 Tidy Data App – A project that provides an interactive dashboard for exploring and visualizing Olympic medalist data from the 2008 games using tidy data principles.  
 
 
 ### 🚀 What's Next?  

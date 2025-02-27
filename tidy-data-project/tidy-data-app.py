@@ -25,7 +25,15 @@ melted_df.rename(columns={"medalist_name": "Medalist Name"}, inplace=True)
 # Capitalize medal types
 melted_df["Medal Type"] = melted_df["Medal Type"].str.title()
 
-# Streamlit App
+#%%
+# The dataset is transformed from a wide format to a tidy format using the melt function,  
+# restructuring the medalist data so that each row represents a single medal awarded.  
+# Unnecessary rows with missing values are dropped, event names are formatted for readability,  
+# and medal types are capitalized to ensure consistency in the dataset.
+
+#%%
+
+# Streamlit App Setup
 st.title("Olympic Medalists Data")
 st.markdown("""
 This interactive dashboard allows users to explore and filter Olympic medalist data from the 2008 games. 
@@ -34,10 +42,15 @@ Use the provided filters to narrow down medalists by name, event, or medal type.
 
 # Sidebar Navigation
 st.sidebar.title("Navigation")
-st.sidebar.markdown("[Medal Summary](#olympic-medalists-data)")
+st.sidebar.markdown("[Medalist Dataframe](#olympic-medalists-data)")
 st.sidebar.markdown("[Visualizations](#total-medals-by-event)")
 
+#%%
+# The Streamlit app is set up with a title and a brief description to provide context for users.  
+# A sidebar navigation menu is included to help users quickly jump between sections,  
+# such as the medal summary and visualizations.  
 
+#%%
 # Filtering options
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -62,12 +75,24 @@ st.subheader("Filtered Medalist Data")
 st.caption("Use the filters above to refine the dataset.")
 st.dataframe(filtered_df, hide_index=True)
 
+#%%
+# The filtering process allows users to refine the primary dataset based on three criteria: medalist name, event, and medal type.  
+# Users can enter a name to search for specific athletes, select an event from a dropdown menu, or filter by medal type (Gold, Silver, Bronze).  
+# The selected filters dynamically update the displayed dataframe, ensuring a customized and relevant view of the Olympic medalist data. 
+#  
+#%%
 # Pivot Table Summary
 st.subheader("Medal Summary by Event and Type")
 st.caption("Aggregated count of medals awarded for each event and type.")
 pivot_df = melted_df.pivot_table(index="Event", columns="Medal Type", aggfunc="size", fill_value=0)[["Gold", "Silver", "Bronze"]]
 st.dataframe(pivot_df)
 
+#%%
+# The pivot table aggregates the medalist data by event and medal type, providing a concise summary of medal counts.  
+# It restructures the dataset to display the total number of gold, silver, and bronze medals awarded for each event.  
+# This helps users quickly analyze which events had the highest medal distribution.
+
+#%%
 # Visualization 1: Total Medals by Event
 st.subheader("Total Medals by Event")
 st.caption("A bar chart showing the total medals awarded in each event.")
@@ -89,3 +114,6 @@ plt.ylabel("Count")
 st.pyplot(fig)
 
 #%%
+# The visualizations provide insights into the distribution of medals across different events and medal types.  
+# The first visualization uses a bar chart to show the total number of medals awarded per event.
+# The second visualization also uses a bar chart to highlight the total number of medals given across the 2008 Olympics
