@@ -37,7 +37,6 @@ melted_df["Medal Type"] = melted_df["Medal Type"].str.title()
 st.title("Olympic Medalists Data")
 st.markdown("""
 This interactive dashboard allows users to explore and filter Olympic medalist data from the 2008 games. 
-Use the provided filters to narrow down medalists by name, event, or medal type.
 """)
 
 # Sidebar Navigation
@@ -51,6 +50,10 @@ st.sidebar.markdown("[Visualizations](#total-medals-by-event)")
 # such as the medal summary and visualizations.  
 
 #%%
+# Display DataFrame
+st.subheader("Filtered Medalist Data")
+st.caption("Use the filters below to refine the dataset.")
+
 # Filtering options
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -70,9 +73,6 @@ if event_filter != "All":
 if medal_filter != "All":
     filtered_df = filtered_df[filtered_df["Medal Type"] == medal_filter]
 
-# Display DataFrame
-st.subheader("Filtered Medalist Data")
-st.caption("Use the filters above to refine the dataset.")
 st.dataframe(filtered_df, hide_index=True)
 
 #%%
