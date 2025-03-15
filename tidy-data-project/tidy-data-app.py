@@ -46,8 +46,8 @@ st.sidebar.markdown("[Visualizations](#total-medals-by-event)")
 
 #%%
 # The Streamlit app is set up with a title and a brief description to provide context for users.  
-# A sidebar navigation menu is included to help users quickly jump between sections,  
-# such as the medal summary and visualizations.  
+# A sidebar navigation menu is included to help users quickly jump between the two sections,
+# the medal summary and visualizations.  
 
 #%%
 # Display DataFrame
