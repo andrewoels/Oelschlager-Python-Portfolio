@@ -101,7 +101,8 @@ if submitted and user_text:
 
     st.subheader("📋 Extracted Entities")
     if doc.ents:
-        st.table([{"Text": ent.text, "Label": ent.label_} for ent in doc.ents])
+        #explanation = spacy.explain(ent) or "No explanation available"
+        st.table([{"Text": ent.text, "Label": ent.label_, "Explanation": spacy.explain(ent.label_) or "Custom entry. No explanation available"} for ent in doc.ents])
     else:
         st.info("No entities detected with the current rules or model.")
 elif submitted:
