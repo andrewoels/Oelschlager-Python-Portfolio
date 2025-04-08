@@ -1,4 +1,12 @@
 import spacy
+from spacy.cli import download
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
+
 import streamlit as st
 from spacy import displacy
 import random
@@ -12,7 +20,7 @@ This app lets you explore and customize Named Entity Recognition (NER) by adding
 """)
 
 # Load spaCy's built-in English model
-nlp = spacy.load("en_core_web_sm")
+#nlp = spacy.load("en_core_web_sm")
 
 # Initialize session state for dynamic entity labels
 if "label_count" not in st.session_state:
