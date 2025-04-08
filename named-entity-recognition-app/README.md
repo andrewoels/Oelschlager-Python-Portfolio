@@ -18,23 +18,22 @@ The app allows users to:
 
 ## 🚀 Setup Instructions
 
+
+### 🌐 Access the Deployed Version
+
+Visit the live version on [Streamlit Community Cloud](https://opp-nerapp.streamlit.app/)
+
 ### 🔧 Running Locally
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/custom-ner-app.git
-   cd custom-ner-app
+   git clone https://github.com/andrewoels/Oelschlager-Python-Portfolio
+   cd named-entity-recognition-app
    ```
 
-2. **Create and activate a virtual environment (optional but recommended):**
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install the required libraries:**
+2. **Install the required libraries:**
 
    ```bash
    pip install -r requirements.txt
@@ -47,15 +46,11 @@ The app allows users to:
    python -m spacy download en_core_web_sm
    ```
 
-4. **Run the app:**
+3. **Run the app:**
 
    ```bash
-   streamlit run app.py
+   streamlit run NER-app.py
    ```
-
-### 🌐 Access the Deployed Version
-
-Visit the live version on [Streamlit Community Cloud](https://opp-nerapp.streamlit.app/)
 
 ---
 
@@ -65,12 +60,10 @@ Visit the live version on [Streamlit Community Cloud](https://opp-nerapp.streaml
 - **🏷️ Custom Entity Labels**: Define multiple entity labels and phrases using the sidebar form.
 - **🔍 Visual Output**: See entities highlighted in color-coded spans. Each label has a unique color.
 - **📋 Entity Table**: View a structured table of extracted entities and their corresponding labels.
-- **📚 Examples & Suggestions**:
-  - Choose from predefined text examples like:
+- **📚 Examples & Suggestions**: Choose from predefined text examples like...
     - Tech Brands
     - Athletes
     - Products & Retail
-  - When no text is provided, suggestions appear in the sidebar to help guide users.
 
 ### 🛠 Example Usage
 
