@@ -55,7 +55,7 @@ The app allows users to:
 
 ### 🌐 Access the Deployed Version
 
-Visit the live version on [Streamlit Community Cloud](https://your-deployment-url.streamlit.app) (replace with your actual URL).
+Visit the live version on [Streamlit Community Cloud](https://opp-nerapp.streamlit.app/)
 
 ---
 
@@ -106,4 +106,4 @@ tennis
 
 **Andrew Oelschlager**  
 Senior Design Student @ University of Notre Dame  
-Creative Technologist | Designer | Developer
+Creative | Designer | Developer
