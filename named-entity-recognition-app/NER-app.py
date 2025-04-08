@@ -1,5 +1,15 @@
-import streamlit as st
 import spacy
+import subprocess
+import sys
+
+# Try to load the model, download it if not available
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
+
+import streamlit as st
 from spacy import displacy
 import random
 
