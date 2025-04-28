@@ -8,7 +8,7 @@ import plotly.express as px
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/Madden25_Ratings.csv")
+    df = pd.read_csv("data/madden_25_ratings.csv")
 
     # Step 1: Combine first and last names
     df["Name"] = df["firstName"] + " " + df["lastName"]
