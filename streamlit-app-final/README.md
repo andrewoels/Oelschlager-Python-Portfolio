@@ -79,7 +79,6 @@ Visit the live version on [Streamlit Community Cloud](https://andrewoels-maddena
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
 - [Plotly Express Documentation](https://plotly.com/python/plotly-express/)
-- [Madden NFL 25 Official Player Ratings](https://www.ea.com/games/madden-nfl/madden-nfl-25/ratings)
 
 ---
 
