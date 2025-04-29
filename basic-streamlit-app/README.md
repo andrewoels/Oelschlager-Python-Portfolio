@@ -1,15 +1,42 @@
-# Penguin Data Explorer 🐧
+# 🐧 Penguin Data Explorer
 
-**📊 A Streamlit app for exploring the Palmer Penguins dataset with interactive filters.🔍 Filter by species, island, and body mass range to analyze penguin data.**
+## 📋 Project Overview ##
 
-**🚀 How to Run**
+- This app is a basic interactive Streamlit web application that allows users to explore penguin species based on physical characteristics such as flipper length, body mass, and bill measurements.
+---
 
-- Install dependencies:
+## 🚀 Setup & Run Instructions
 
-- Run the app: streamlit run Basic_App.py
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/andrewoels/Oelschlager-Python-Portfolio/tree/main
+   cd basic-streamlit-app
+   ```
+2. **Launch the Streamlit app:**
+   ```bash
+   streamlit run Basic_app.py
+   ```
 
-**📌 What's Next?**
+---
 
-- Future enhancements may include additional visualizations and insights.
+## ✨ App Features
 
-**Stay tuned for updates! 🐧**
+- **📉 Feature Exploration**: Filter and view relationships between physical characteristics of different penguin species.
+
+---
+
+## 📚 References & Resources
+
+- [Palmer Penguins Dataset](https://github.com/allisonhorst/palmerpenguins)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [scikit-learn Documentation](https://scikit-learn.org/stable/)
+- [Seaborn Documentation](https://seaborn.pydata.org/)
+
+---
+
+
+## 👨‍💻 Author
+
+**Andrew Oelschlager**  
+Senior Design Student @ University of Notre Dame  
+Creative Thinker | Designer | Developer
