@@ -48,9 +48,8 @@ def load_data(file_path):
     return df
 
 
-
 # Load cleaned data
-df = load_data("madden_25_ratings.csv")
+df = load_data("streamlit-app-final/madden_25_ratings.csv")
 
 #Formatting – creating a section divider and a line break so the app looks nice
 def section_divider():
