@@ -52,6 +52,7 @@ def load_data():
 # Load cleaned data
 df = load_data()
 
+#Formatting – creating a section divider and a line break so the app looks nice
 def section_divider():
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("---")
@@ -60,7 +61,7 @@ def section_divider():
 def line_break():
     st.markdown("<br>", unsafe_allow_html=True)
 
-#Image
+#Image header Madden Cover
 st.image("images/MaddenCover.jpg")
 
 #App Title
@@ -80,7 +81,7 @@ section_divider()
 st.markdown("<h3 style='text-align: center;'>🎯 Identify Players by Archetype</h3>", unsafe_allow_html=True)
 line_break()
 
-# Step 1: Custom position group map
+# Step 1: Custom position group map - do this because archetypes have broader applications beyond each specific position
 position_group_map = {
     "QB": ["QB"],
     "HB": ["HB"],
@@ -124,7 +125,6 @@ if selected_archetype:
         top_players = filtered_archetype_df.sort_values(by="Overall", ascending=False)
 
         # Step 5: Clean up columns
-        # 🎯 Final Column Handling
 
 # Always start with these basic columns if they exist
         base_columns = ["Name", "Team", "Position", "Overall"]
@@ -154,15 +154,15 @@ if selected_archetype:
             if attr in top_players.columns:
                 attr_values = pd.to_numeric(top_players[attr], errors='coerce')
                 if (attr_values < 40).any():
-                    continue  # Skip attributes with any player under 40
+                    continue  # Skip attributes with any player under 40 because these are going to be attributes that aren't important for the position
                 else:
                     columns_to_keep.append(attr)
 
-        # Remove "Running Style" manually if it somehow exists
+        # Remove "Running Style" manually if it somehow exists because this doesn't affect gameplay performance
         if "Running Style" in columns_to_keep:
             columns_to_keep.remove("Running Style")
 
-        # ✨ Finalize: Static base columns + dynamic stat columns sorted alphabetically
+        #Finalize: Static base columns + dynamic stat columns sorted alphabetically
         static_columns = [col for col in ["Name", "Team", "Position", "Overall", "Height (Inches)", "Weight"] if col in columns_to_keep]
         dynamic_columns = sorted([col for col in columns_to_keep if col not in static_columns])
         final_columns = static_columns + dynamic_columns
@@ -197,12 +197,14 @@ available_positions = [pos for pos in position_order if pos in df["Position"].un
 st.markdown("#### 🔎 Filter Options")
 col1, col2 = st.columns(2)
 
+#position filter
 with col1:
     selected_positions = st.multiselect(
         "Filter by Position",
         options=available_positions
     )
 
+#team filter
 with col2:
     selected_teams = st.multiselect(
         "Filter by Team",
