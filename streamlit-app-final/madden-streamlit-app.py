@@ -288,6 +288,9 @@ if players_selected:
         melted = compare_df.melt(id_vars=["Name"], value_vars=attributes_to_plot,
                                  var_name="Attribute", value_name="Rating")
 
+
+        #spider chart formatting
+        
         if chart_type == "Spider Chart":
             fig = px.line_polar(
                 melted,
@@ -313,6 +316,9 @@ if players_selected:
                 ),
                 showlegend=True
             )
+
+            #bar chart formatting
+
         else:
             fig = px.bar(
                 melted,
