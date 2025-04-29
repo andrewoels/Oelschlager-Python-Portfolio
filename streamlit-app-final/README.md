@@ -1,6 +1,6 @@
 # 🏈 Madden NFL 25 Player Ratings Visualizer
 
-Welcome to the Madden NFL 25 Player Ratings Visualizer — a Streamlit-based web application that helps franchise mode players find, compare, and organize athletes who best fit their team's strategy. Whether you're rebuilding a dynasty or scouting for undervalued gems, this app makes it easier to manage rosters like a real NFL front office.
+Welcome to the Madden NFL 25 Player Ratings Visualizer — a Streamlit-based web application that helps franchise mode players find, compare, and organize players who best fit their team's strategy. Whether you're rebuilding a dynasty or scouting for undervalued gems, this app makes it easier to manage rosters like a real NFL front office.
 
 ---
 
@@ -9,12 +9,14 @@ Welcome to the Madden NFL 25 Player Ratings Visualizer — a Streamlit-based web
 This app solves a critical challenge in Madden franchise mode: quickly identifying players who fit a custom team scheme without manually sorting through overwhelming rosters. 
 
 The app enables users to:
-- Search and filter players by position, archetype, team, height, weight, and overall rating.
+- Scout top players by specific archetypes to find the perfect scheme fit.
+- Sort and interact by individual attribute for maximum detail. 
+- Search and filter players by position, team, and overall rating.
 - Visually compare selected players' detailed attributes using dynamic spider and bar charts.
 - Save custom-built player lists for future use.
-- Scout top players by specific archetypes to find the perfect scheme fit.
 
-Built for players who want smarter, data-driven team management with a real-world scouting feel.
+
+Built for gamers who want smarter, data-driven team management with a real-world scouting feel.
 
 ---
 
@@ -22,17 +24,17 @@ Built for players who want smarter, data-driven team management with a real-worl
 
 ### 🌐 Access the Deployed Version
 
-Coming soon via [Streamlit Community Cloud](https://streamlit.io/cloud)!
+Visit the live version on [Streamlit Community Cloud](https://andrewoels-maddenapp.streamlit.app/)!
 
 ### 🔧 Running Locally
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/your-username/madden-player-ratings-app.git
+   git clone https://github.com/andrewoels/Oelschlager-Python-Portfolio
    ```
 2. **Navigate into the project directory:**
    ```bash
-   cd madden-player-ratings-app
+   cd streamlit-app-final
    ```
 3. **Install required dependencies:**
    ```bash
@@ -40,16 +42,16 @@ Coming soon via [Streamlit Community Cloud](https://streamlit.io/cloud)!
    ```
 4. **Launch the Streamlit app:**
    ```bash
-   streamlit run app.py
+   streamlit run madden-streamlit-app.py
    ```
 
 ### 📄 Dependencies
 
 | Library | Version |
 |:---|:---|
-| streamlit | 1.30.0 |
-| pandas | 2.1.3 |
-| plotly | 5.18.0 |
+| pandas | 2.2.3 |
+| plotly | 6.0.1 |
+| streamlit | 1.44.1 |
 
 *(Versions tested as of deployment. Future updates may require adjustment.)*
 
@@ -57,18 +59,18 @@ Coming soon via [Streamlit Community Cloud](https://streamlit.io/cloud)!
 
 ## ✨ App Features
 
-- **📉 Player Search & Filters**: Select players based on position, team, college, archetype, height, weight, and overall.
-- **🔄 Attribute Comparison (Spider/Bar Charts)**: Dynamically visualize player strengths across selected attributes.
-- **📂 Custom Player Lists**: Save a curated group of prospects or free agents to review later.
 - **📊 Scheme Fit Scouting**: Discover top players for your archetype and adjust your roster strategy accordingly.
-- **💾 Data Download**: Export custom lists for future franchise planning.
+- **📉 Player Search & Filters**: Select players based on position, team, and overall.
+- **🔄 Attribute Comparison (Spider/Bar Charts)**: Dynamically visualize player strengths across selected attributes.
+- **💾 Data Download**: Export a curated group of prospects or free agents for future franchise planning.
 
 ### 🛠 Example Workflow
 
-1. Search for "Field General" quarterbacks with specific height and weight ranges.
-2. Compare throwing and agility attributes visually.
-3. Save the best-fitting QBs into a shortlist.
-4. Download the list for your Madden franchise.
+1. Search for "Scrambler" quarterbacks. <img width="1179" alt="sa-1" src="https://github.com/user-attachments/assets/c9fd308c-8a63-415a-86ff-df9fc551646b" />
+2. Sort players by Speed to find the fastest QBs of this archetype. <img width="967" alt="sa-2" src="https://github.com/user-attachments/assets/0e8f6933-87fd-484d-8545-25145935fcb4" /> <img width="896" alt="sa-3" src="https://github.com/user-attachments/assets/354099a9-8a3b-4aa3-8c07-8d3a956db9a7" />
+3. Add your players of choice into the attribute visualizer to compare their strengths and weaknesses visually.<img width="926" alt="sa-4" src="https://github.com/user-attachments/assets/ff6eac5d-6d54-47ce-9721-b5580f9abbcd" /> <img width="807" alt="sa-5" src="https://github.com/user-attachments/assets/a012b0f4-54f1-465e-a6c2-23f4d9e82a45" /> <img width="783" alt="sa-6" src="https://github.com/user-attachments/assets/1ee5c0f1-2ffc-4dfe-a5b5-fe6b8eec573b" />
+4. Download the players list for future use in your Madden franchise. <img width="903" alt="sa-7" src="https://github.com/user-attachments/assets/3568bbd0-180c-485f-9789-50757e6378c4" />
+
 
 ---
 
@@ -81,17 +83,6 @@ Coming soon via [Streamlit Community Cloud](https://streamlit.io/cloud)!
 
 ---
 
-## 📸 Visual Examples
-
-### 🏈 Player Attribute Comparison
-
-![Spider Chart Example](images/spider_chart_example.png)
-
-### 🏐 Find a Player to Fit Your Scheme
-
-![Top Archetype Players Table](images/archetype_table_example.png)
-
----
 
 ## 👨‍💻 Author
 
