@@ -7,8 +7,8 @@ import plotly.express as px
 #Importing and cleaning data
 
 @st.cache_data
-def load_data():
-    df = pd.read_csv("madden_25_ratings.csv")
+def load_data(file_path):
+    df = pd.read_csv(file_path)
 
     # Step 1: Combine first and last names
     df["Name"] = df["firstName"] + " " + df["lastName"]
@@ -50,7 +50,7 @@ def load_data():
 
 
 # Load cleaned data
-df = load_data()
+df = load_data("madden_25_ratings.csv")
 
 #Formatting – creating a section divider and a line break so the app looks nice
 def section_divider():
