@@ -61,7 +61,7 @@ def line_break():
     st.markdown("<br>", unsafe_allow_html=True)
 
 #Image header Madden Cover
-st.image("images/MaddenCover.jpg")
+st.image("streamlit-app-final/images/MaddenCover.jpg")
 
 #App Title
 st.markdown("<h1 style='text-align: center;'>Madden NFL 25 Scouting App</h1>", unsafe_allow_html=True)
